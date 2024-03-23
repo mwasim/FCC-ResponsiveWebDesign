@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">
+        Name
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </label>
+      <label id="email-label" for="email">
+        Email
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </label>
+      <label id="number-label" for="age">
+        Age (optional)
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="Age"
+          min="13"
+          max="120"
+        />
+      </label>
+      <label for="dropdown">
+        Current role?
+        <select id="dropdown">
+          <option value="">Select</option>
+          <option value="1">Student</option>
+          <option value="2">Web Developer</option>
+          <option value="3">Full Stack Developer</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>You like?</legend>
+        <label for="designing">
+          <input
+            type="radio"
+            id="designing"
+            name="interest"
+            value="designing"
+            class="inline"
+          />
+          Designing
+        </label>
+        <label for="coding">
+          <input
+            type="radio"
+            id="coding"
+            name="interest"
+            value="coding"
+            class="inline"
+            checked
+          />
+          Coding
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Programming Languages?</legend>
+        <label for="csharp">
+          <input type="checkbox" id="csharp" value="csharp" class="inline" />
+          C#
+        </label>
+        <label for="java">
+          <input type="checkbox" id="java" value="java" class="inline" />
+          Java
+        </label>
+        <label for="cplusplus">
+          <input
+            type="checkbox"
+            id="cplusplus"
+            value="cplusplus"
+            class="inline"
+          />
+          C++
+        </label>
+      </fieldset>
+      <label for="additional-comments">
+        Additional Comments?
+        <textarea
+          id="additional-comments"
+          name="additional-comments"
+          cols="30"
+          rows="3"
+          placeholder="Enter your comments here..."
+        ></textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
